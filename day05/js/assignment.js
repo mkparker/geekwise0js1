@@ -21,12 +21,30 @@
 //
 // console.log(fName, lName);
 
-function fNameLName() {
+/*function fNameLName() {
   var fName = prompt('What is your first name?');
   var lName = prompt('What is your last name?');
   //alert("Welcome" + " " + fName+ " " + lName);
+    alert(`Welcome ${fName} ${lName}`);
 }
 
 function welcomeMessage(){
   alert(`Welcome ${fName} ${lName}`);
+}*/
+
+// higley
+function getUsername(){
+  var userFirst = prompt('Enter your first name.').trim();
+  welcome(properCap(userFirst));
 }
+
+function properCap(uf){
+  uf = uf.charAt(0).toUpperCase() + uf.substr(1).toLowerCase();
+  //welcome(uf);
+  return uf;
+}
+function welcome(uf){
+  alert(`Welcome ${uf}.`);
+}
+
+console.log(properCap('Mhjckdkjhcds'));
