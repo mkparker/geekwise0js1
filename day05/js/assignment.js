@@ -41,10 +41,8 @@ function getUsername(){
 function properCap(uf){
   uf = uf.charAt(0).toUpperCase() + uf.substr(1).toLowerCase();
   //welcome(uf);
-  return uf;
+  return uf; // <!-- always the last command!
 }
 function welcome(uf){
   alert(`Welcome ${uf}.`);
 }
-
-console.log(properCap('Mhjckdkjhcds'));
