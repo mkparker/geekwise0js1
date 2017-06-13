@@ -62,3 +62,11 @@ for(var i = 0; i < form.length - 1; i++){
 //textContent or innerHTML to "set" the code to the window
 // create a <div> to push the code into
 // http://keycode.info
+
+
+//keydown
+var key = document.querySelector('.key'),
+h1 = document.querySelector('h1');
+keyed = document.querySelector('.keyed');
+
+window.addEventListener('keydown', funtion)
